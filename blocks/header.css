@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 45px auto 0;
+  max-width: 882px;
+  width: 100%;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.7); /* Se hace borde solido con una opacidad de 0.7 según el dato del brief*/
+}
+
+.header__logo {
+  display: flex;
+  height: 33px;
+  max-width: 173px;
+  margin-bottom: 41px;
+  justify-content: flex-start;
+  position: relative;
+}
