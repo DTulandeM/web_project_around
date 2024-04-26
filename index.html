@@ -29,12 +29,12 @@
           <div class="profile__info">
             <div class="profile__name-button">
               <h1 class="profile__name">Jacques Cousteau</h1>
-              <button class="profile__edit-button"></button>
+              <button type="click" class="profile__edit-button"></button>
             </div>
             <p class="profile__about-me">Explorer</p>
           </div>
 
-          <button class="profile__add-button"></button>
+          <button type="click" class="profile__add-button"></button>
         </section>
         <section id="elements" class="elements">
           <div class="element">
@@ -91,6 +91,30 @@
             <p class="element__title">Lago Di Braies</p>
             <button class="element__button-like"></button>
           </div>
+        </section>
+        <section id="menupopup-profile" class="menupopup-profile">
+          <button type="click" class="menupopup__button-close"></button>
+          <form class="menupopup-profile form">
+            <h1 class="form__title">Edit Profile</h1>
+            <fieldset class="form__fieldset">
+              <input
+                type="text"
+                class="form__input"
+                id="name-profile"
+                placeholder="Nombre"
+                required
+              />
+
+              <input
+                type="text"
+                class="form__input"
+                id="Acercademi"
+                placeholder="Acerca de mi"
+                required
+              />
+              <button type="click" class="form__button"></button>
+            </fieldset>
+          </form>
         </section>
         <footer class="footer">
           <p class="footer__copyright">© 2024 Alrededor de los EEUU</p>
