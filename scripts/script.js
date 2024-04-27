@@ -1,6 +1,10 @@
 const popupProfile = document.querySelector("#menupopup-profile");
 const profileButton = document.querySelector(".profile__edit-button");
 const closeProfileButton = document.querySelector(".menupopup__button-close");
+let formElementName = document.querySelector("#profile-name");
+let formElementAboutme = document.querySelector("#profile-aboutme");
+
+console.log(formElementName);
 
 function showPopupProfile() {
   popupProfile.classList.add("menupopup__profile-show");
