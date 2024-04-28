@@ -1,6 +1,6 @@
-const popupProfile = document.querySelector("#menupopup-profile");
+const popupProfile = document.querySelector("#popup-profile");
 const profileButton = document.querySelector(".profile__edit-button");
-const closeProfileButton = document.querySelector(".menupopup__button-close");
+const closeProfileButton = document.querySelector(".popup__button-close");
 const saveProfileButton = document.querySelector(".form__button-save");
 const formProfile = document.querySelector("#form-profile");
 const overlay = document.querySelector("#cover");
@@ -10,14 +10,14 @@ let formInputName = document.querySelector("#profile-name");
 let formInputAboutme = document.querySelector("#profile-aboutme");
 
 function showPopupProfile() {
-  popupProfile.classList.add("menupopup__profile-show");
-  overlay.classList.add("menupopup__overlay");
+  popupProfile.classList.add("popup__profile-show");
+  overlay.classList.add("popup__overlay");
   formInputName.value = formProfileName.textContent;
   formInputAboutme.value = formProfileAboutme.textContent;
 }
 function closePopupProfile() {
-  popupProfile.classList.remove("menupopup__profile-show");
-  overlay.classList.remove("menupopup__overlay");
+  popupProfile.classList.remove("popup__profile-show");
+  overlay.classList.remove("popup__overlay");
 }
 
 formProfile.addEventListener("submit", function (evt) {
