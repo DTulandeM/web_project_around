@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .page {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   display: flex;
@@ -6,7 +10,6 @@
   width: 100%;
   box-sizing: border-box;
   background-color: #000;
-  overflow: hidden;
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

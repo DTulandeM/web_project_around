@@ -84,7 +84,7 @@
   margin-left: 135px;
   background-image: url("../images/add-button.svg");
   background-repeat: no-repeat;
-  background-size: (22px 22px);
+  background-size: 22px 22px;
   background-position: center;
   background-color: black;
   border: 1px solid #fff;
@@ -142,7 +142,7 @@
   .profile__add-button {
     margin: 0px;
     max-width: 282px;
-    background-size: (16px 16px);
+    background-size: 16px 16px;
     padding: 0;
   }
 }
@@ -193,7 +193,7 @@
   .profile__add-button {
     margin: 0px;
     max-width: 282px;
-    background-size: (16px 16px);
+    background-size: 16px 16px;
     padding: 0;
   }
 }
