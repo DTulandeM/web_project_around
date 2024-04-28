@@ -42,7 +42,7 @@
   border-bottom: 1px solid #000000;
   padding: 0;
 }
-.form__button {
+.form__button-save {
   display: block;
   box-sizing: border-box;
   border-radius: 4px;
@@ -65,7 +65,7 @@
   cursor: pointer;
   padding: 0;
 }
-.form__button:hover {
+.form__button-save:hover {
   opacity: 70%;
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -88,7 +88,7 @@
   .form__input {
     max-width: 238px;
   }
-  .form__button {
+  .form__button-save {
     max-width: 238px;
     height: 46px;
     font-size: 14px;

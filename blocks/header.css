@@ -15,7 +15,25 @@
   justify-content: flex-start;
   position: relative;
 }
-@media screen and (max-width: 320px) and (max-width: 600px) {
+
+@media screen and (max-width: 320px) {
+  .header {
+    margin: 28px auto 0;
+    max-width: 320px;
+  }
+
+  .header__logo {
+    display: flex;
+    height: 24px;
+    max-width: 126px;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-left: 27px;
+    justify-content: flex-start;
+    position: relative;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .header {
     margin: 28px auto 0;
     max-width: 320px;
