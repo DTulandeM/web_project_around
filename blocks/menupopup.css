@@ -23,7 +23,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
 }
-.menupopup__button-close {
+.menupopup__button__close {
   position: absolute;
   bottom: 1px;
   left: 430px;
@@ -39,7 +39,7 @@
   cursor: pointer;
   z-index: 10;
 }
-.menupopup__button-close:hover {
+.menupopup__button__close:hover {
   opacity: 70%;
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -52,7 +52,7 @@
   .menupopup__profile-show {
     display: flex;
   }
-  .menupopup__button-close {
+  .menupopup__button__close {
     bottom: 14px;
     left: 256px;
     max-width: 26px;
