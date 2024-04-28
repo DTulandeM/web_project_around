@@ -1,6 +1,6 @@
 const popupProfile = document.querySelector("#popup-profile");
 const profileButton = document.querySelector(".profile__edit-button");
-const closeProfileButton = document.querySelector(".popup__button-close");
+const closeProfileButton = document.querySelector(".popup__close-button");
 const saveProfileButton = document.querySelector(".form__button-save");
 const formProfile = document.querySelector("#form-profile");
 const overlay = document.querySelector("#cover");
