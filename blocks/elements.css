@@ -64,7 +64,6 @@
 
 .element__button-like:active {
   background-image: url("../images/like_heartfull.svg");
-  opacity: 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
