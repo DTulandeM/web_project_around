@@ -1,4 +1,4 @@
-.popup-profile {
+.popup {
   background-color: #fff;
   display: none;
   position: fixed;
@@ -11,10 +11,10 @@
   width: 100%;
   z-index: 10;
 }
-.popup-profile-show {
+.popup-show {
   display: flex;
 }
-.popup-profile__overlay {
+.popup__overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +23,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
 }
-.popup-profile__button-close {
+.popup__button-close {
   position: absolute;
   bottom: 1px;
   left: 430px;
@@ -39,20 +39,20 @@
   cursor: pointer;
   z-index: 10;
 }
-.popup-profile__button-close:hover {
+.popup__button-close:hover {
   opacity: 70%;
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-  .popup-profile {
+  .popup {
     top: 123px;
     right: calc(50% - 141px);
     max-width: 282px;
     margin: 0;
   }
-  .popup-profile-show {
+  .popup-show {
     display: flex;
   }
-  .popup-profile__button-close {
+  .popup__button-close {
     bottom: 14px;
     left: 256px;
     max-width: 26px;

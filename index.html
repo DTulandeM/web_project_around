@@ -37,7 +37,7 @@
           <button type="button" class="profile__add-button"></button>
         </section>
         <section id="elements" class="elements">
-          <div class="element">
+          <!-- <div class="element">
             <img
               src="./images/yosemite_valey.png"
               class="element__image"
@@ -90,12 +90,16 @@
             />
             <p class="element__title">Lago Di Braies</p>
             <button type="button" class="element__button-like"></button>
-          </div>
+          </div> -->
         </section>
         <div id="cover"></div>
-        <section id="popup-profile" class="popup-profile">
-          <button type="button" class="popup-profile__button-close"></button>
-          <form id="form-profile" class="popup-profile form">
+        <section id="popup-profile" class="popup">
+          <button
+            type="button"
+            id="button__close-profile"
+            class="popup__button-close"
+          ></button>
+          <form id="form-profile" class="popup form">
             <h1 class="form__title">Edit Profile</h1>
             <fieldset class="form__fieldset">
               <input
@@ -114,6 +118,34 @@
                 required
               />
               <button type="submit" class="form__button-save"></button>
+            </fieldset>
+          </form>
+        </section>
+        <section id="popup-addimage" class="popup">
+          <button
+            type="button"
+            id="button__close-addimage"
+            class="popup__button-close"
+          ></button>
+          <form id="form-addimage" class="popup form">
+            <h1 class="form__title">Nuevo Lugar</h1>
+            <fieldset class="form__fieldset">
+              <input
+                type="text"
+                class="form__input"
+                id="addimage-name"
+                placeholder="Título"
+                required
+              />
+
+              <input
+                type="text"
+                class="form__input"
+                id="addimage-sourcelink"
+                placeholder="Enlace a la imagen"
+                required
+              />
+              <button type="submit" class="form__button-addimage"></button>
             </fieldset>
           </form>
         </section>
