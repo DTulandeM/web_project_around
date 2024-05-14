@@ -1,9 +1,11 @@
 const popupProfile = document.querySelector("#popup-profile");
 const popupAddImage = document.querySelector("#popup-addimage");
+const popupOpenImage = document.querySelector("#popup-imagen");
 const profileButton = document.querySelector(".profile__edit-button");
 const profileAddButton = document.querySelector(".profile__add-button");
 const closeProfileButton = document.querySelector("#button__close-profile");
 const closeAddImageButton = document.querySelector("#button__close-addimage");
+const closeShowImageButton = document.querySelector("#button__close-showimage");
 const saveProfileButton = document.querySelector(".form__button-save");
 const addImageButton = document.querySelector("form__button-addimage");
 const formProfile = document.querySelector("#form-profile");
@@ -58,6 +60,7 @@ function closePopup() {
   popupProfile.classList.remove("popup-show");
   popupAddImage.classList.remove("popup-show");
   overlay.classList.remove("popup__overlay");
+  popupOpenImage.classList.remove("popup-show");
   formImageInputName.value = "";
   formImageInputLink.value = "";
 }
@@ -79,6 +82,22 @@ function addCards(name, link) {
   cardImage.src = link;
   cardImage.alt = "Fotografia de " + name;
   cardTitle.textContent = name;
+  cardImage.addEventListener("click", function () {
+    const showPopupImageReview = document.querySelector(
+      ".popup__image-open__review"
+    );
+    const showPopupImageSubtittle = document.querySelector(
+      ".popup__imagen-open__subtitle"
+    );
+
+    popupOpenImage.classList.add("popup-show");
+    overlay.classList.add("popup__overlay");
+
+    showPopupImageReview.src = link;
+    showPopupImageReview.alt = "Fotografia de " + name;
+    showPopupImageSubtittle.textContent = name;
+  });
+
   return cardElement;
 }
 
@@ -107,3 +126,4 @@ profileButton.addEventListener("click", showPopupProfile);
 profileAddButton.addEventListener("click", showPopupAddImage);
 closeProfileButton.addEventListener("click", closePopup);
 closeAddImageButton.addEventListener("click", closePopup);
+closeShowImageButton.addEventListener("click", closePopup);
