@@ -84,10 +84,10 @@ function addCards(name, link) {
   cardTitle.textContent = name;
   cardImage.addEventListener("click", function () {
     const showPopupImageReview = document.querySelector(
-      ".popup__image-open__review"
+      ".popup-image__open-review"
     );
     const showPopupImageSubtittle = document.querySelector(
-      ".popup__imagen-open__subtitle"
+      ".popup-imagen__open__subtitle"
     );
 
     popupOpenImage.classList.add("popup-show");

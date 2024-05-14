@@ -11,7 +11,7 @@
   width: 100%;
   z-index: 10;
 }
-.popup__imagen-open {
+.popup-imagen__open {
   display: none;
   position: fixed;
   top: 90px;
@@ -56,7 +56,7 @@
   opacity: 70%;
 }
 
-.popup__image-open__review {
+.popup-image__open-review {
   position: relative;
   max-width: 75vw;
   max-height: 75vh;
@@ -66,7 +66,7 @@
   margin: 0;
   z-index: 10;
 }
-.popup__imagen-open__subtitle {
+.popup-imagen__open__subtitle {
   position: relative;
   color: #ffffff;
   font-family: "Inter";
@@ -78,7 +78,7 @@
   text-align: left;
   z-index: 10;
 }
-.popup__image-button-close {
+.popup-image__button-close {
   position: relative;
   left: 40px;
   background-color: black;
@@ -93,7 +93,7 @@
   cursor: pointer;
   z-index: 10;
 }
-.popup__image-button-close:hover {
+.popup-image__button-close:hover {
   opacity: 70%;
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
