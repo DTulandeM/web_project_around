@@ -113,4 +113,9 @@
     width: 100%;
     height: 26px;
   }
+  .popup__image-button-close {
+    max-width: 26px;
+    width: 100%;
+    height: 26px;
+  }
 }
