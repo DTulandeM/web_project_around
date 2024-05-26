@@ -50,11 +50,25 @@ function showPopupProfile() {
   overlay.classList.add("popup__overlay");
   formInputName.value = formProfileName.textContent;
   formInputAboutme.value = formProfileAboutme.textContent;
+  toggleButtonState(
+    Array.from(formProfile.querySelectorAll(".form__input")),
+    formProfile.querySelector(".form__button"),
+    {
+      inactiveButtonClass: "form__button_disabled",
+    }
+  );
 }
 
 function showPopupAddImage() {
   popupAddImage.classList.add("popup-show");
   overlay.classList.add("popup__overlay");
+  toggleButtonState(
+    Array.from(formAddImage.querySelectorAll(".form__input")),
+    formAddImage.querySelector(".form__button"),
+    {
+      inactiveButtonClass: "form__button_disabled",
+    }
+  );
 }
 function closePopup() {
   popupProfile.classList.remove("popup-show");
@@ -63,6 +77,20 @@ function closePopup() {
   popupOpenImage.classList.remove("popup-show");
   formImageInputName.value = "";
   formImageInputLink.value = "";
+  resetValidation(formProfile, {
+    inputSelector: ".form__input",
+    submitButtonSelector: ".form__button",
+    inactiveButtonClass: "form__button_disabled",
+    inputErrorClass: "form__input_type_error",
+    errorClass: "form__error_visible",
+  });
+  resetValidation(formAddImage, {
+    inputSelector: ".form__input",
+    submitButtonSelector: ".form__button",
+    inactiveButtonClass: "form__button_disabled",
+    inputErrorClass: "form__input_type_error",
+    errorClass: "form__error_visible",
+  });
 }
 
 function addCards(name, link) {
@@ -122,8 +150,15 @@ initialCards.forEach(function (item) {
   const newCardElement = addCards(item.name, item.link);
   elementContainder.append(newCardElement);
 });
+function keyHandlerClose(evt) {
+  if (evt.key === "Escape") {
+    closePopup();
+  }
+}
 profileButton.addEventListener("click", showPopupProfile);
 profileAddButton.addEventListener("click", showPopupAddImage);
 closeProfileButton.addEventListener("click", closePopup);
+document.addEventListener("keydown", keyHandlerClose);
+overlay.addEventListener("click", closePopup);
 closeAddImageButton.addEventListener("click", closePopup);
 closeShowImageButton.addEventListener("click", closePopup);

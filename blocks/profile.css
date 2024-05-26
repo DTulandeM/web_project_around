@@ -45,6 +45,9 @@
   text-align: left;
   max-width: 373px;
   width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__edit-button {
@@ -75,6 +78,9 @@
   width: 100%;
   margin: 0;
   align-self: flex-start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .profile__add-button {
   display: flex;

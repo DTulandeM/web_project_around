@@ -53,7 +53,7 @@
             id="button__close-profile"
             class="popup__button-close"
           ></button>
-          <form id="form-profile" class="popup form">
+          <form id="form-profile" class="popup form" novalidate>
             <h1 class="form__title">Edit Profile</h1>
             <fieldset class="form__fieldset">
               <input
@@ -62,16 +62,27 @@
                 id="profile-name"
                 placeholder="Nombre"
                 required
+                minlength="2"
+                maxlength="40"
               />
-
+              <span id="profile-name-error" class="form__error_visible"></span>
               <input
                 type="text"
                 class="form__input"
                 id="profile-aboutme"
                 placeholder="Acerca de mi"
                 required
+                minlength="2"
+                maxlength="200"
               />
-              <button type="submit" class="form__button-save"></button>
+              <span
+                id="profile-aboutme-error"
+                class="form__error_visible"
+              ></span>
+              <button
+                type="submit"
+                class="form__button form__button-save"
+              ></button>
             </fieldset>
           </form>
         </section>
@@ -81,7 +92,7 @@
             id="button__close-addimage"
             class="popup__button-close"
           ></button>
-          <form id="form-addimage" class="popup form">
+          <form id="form-addimage" class="popup form" novalidate>
             <h1 class="form__title">Nuevo Lugar</h1>
             <fieldset class="form__fieldset">
               <input
@@ -90,16 +101,23 @@
                 id="addimage-name"
                 placeholder="Titulo"
                 required
+                minlength="2"
+                maxlength="30"
               />
+              <span id="addimage-name-error" class="form__error_visible"></span>
 
               <input
-                type="text"
+                type="url"
                 class="form__input"
                 id="addimage-link"
                 placeholder="Enlace a la imagen"
                 required
               />
-              <button type="submit" class="form__button-addimage"></button>
+              <span id="addimage-link-error" class="form__error_visible"></span>
+              <button
+                type="submit"
+                class="form__button form__button-addimage"
+              ></button>
             </fieldset>
           </form>
         </section>
@@ -119,5 +137,6 @@
       </main>
     </div>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/validate.js"></script>
   </body>
 </html>
