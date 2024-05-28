@@ -12,12 +12,12 @@ const formProfile = document.querySelector("#form-profile");
 const formAddImage = document.querySelector("#form-addimage");
 const overlay = document.querySelector("#cover");
 const elementContainder = document.querySelector(".elements");
-let formProfileName = document.querySelector(".profile__name");
-let formProfileAboutme = document.querySelector(".profile__about-me");
-let formInputName = document.querySelector("#profile-name");
-let formInputAboutme = document.querySelector("#profile-aboutme");
-let formImageInputName = document.querySelector("#addimage-name");
-let formImageInputLink = document.querySelector("#addimage-link");
+const formProfileName = document.querySelector(".profile__name");
+const formProfileAboutme = document.querySelector(".profile__about-me");
+const formInputName = document.querySelector("#profile-name");
+const formInputAboutme = document.querySelector("#profile-aboutme");
+const formImageInputName = document.querySelector("#addimage-name");
+const formImageInputLink = document.querySelector("#addimage-link");
 const initialCards = [
   {
     name: "Valle de Yosemite",
