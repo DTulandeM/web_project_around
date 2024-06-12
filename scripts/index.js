@@ -22,7 +22,6 @@ import {
   formImageInputLink,
 } from "./utils.js";
 
-//Generación de Cartas iniciales
 initialCards.forEach((item) => {
   const card = new Card(item.name, item.link);
   const cardElement = card.generateCard();
@@ -30,7 +29,6 @@ initialCards.forEach((item) => {
   elementContainder.append(cardElement);
 });
 
-//Cierre de los popups con la tecla "ESC"
 function keyHandlerClose(evt) {
   if (evt.key === "Escape") {
     const closeCard = new Card();
