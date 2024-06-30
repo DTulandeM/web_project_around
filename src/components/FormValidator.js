@@ -1,5 +1,3 @@
-import { formProfileName } from "./utils.js";
-
 export default class FormValidator {
   constructor(formElement, settings) {
     this._formElement = formElement;
