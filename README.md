@@ -16,4 +16,4 @@ El código del proyecto fue empaquetado y minificado con la ayuda de webpack y b
 - Webpack
 - Babel
 
-https://dtulandem.github.io/web_project_around/index.html
+https://dtulandem.github.io/web_project_around/src/index.html
