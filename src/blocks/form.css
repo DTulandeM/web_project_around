@@ -64,19 +64,7 @@
   cursor: pointer;
   padding: 0;
 }
-.form__button-save {
-  background-image: url(../images/submit-button.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 
-.form__button-addimage {
-  background-image: url(../images/addimage-button.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .form__button:hover {
   opacity: 70%;
 }

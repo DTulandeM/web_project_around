@@ -8,15 +8,35 @@
 }
 
 .profile__avatar-circle {
+  position: relative;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
 }
+
+.profile__avatar-circle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  background-image: url("../images/Edit_photo_profile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile__avatar-circle:hover::after {
+  opacity: 0.9;
+}
+
 .profile__avatar {
   width: 100%;
   height: 100%;
-  background-image: url("../images/profile_photo.jpg");
+  background-image: url("../images/profile_photo_test.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;

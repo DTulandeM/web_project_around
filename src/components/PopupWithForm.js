@@ -8,6 +8,7 @@ export default class PopupWithForm extends Popup {
     this._inputList = Array.from(
       this._formElement.querySelectorAll(".form__input")
     );
+    this._submitButtons = this._formElement.querySelector(".form__button");
     this._getInputValues = this._getInputValues.bind(this);
   }
   _getInputValues() {
@@ -18,12 +19,18 @@ export default class PopupWithForm extends Popup {
 
     return this.formValues;
   }
-  open() {
-    super.open();
-  }
+
   close() {
     super.close();
     this._formElement.reset();
+    if (this._submitButtons.name === "place") {
+      this._submitButtons.textContent = "Crear";
+    } else {
+      this._submitButtons.textContent = "Guardar";
+    }
+  }
+  _handleLoading() {
+    this._submitButtons.textContent = "Guardando...";
   }
 
   setEventListeners() {
@@ -31,6 +38,7 @@ export default class PopupWithForm extends Popup {
     this._formElement.addEventListener("submit", (evt) => {
       evt.preventDefault();
       this.handleFormSubmit(this._getInputValues());
+      this._handleLoading();
     });
   }
 }

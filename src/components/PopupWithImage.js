@@ -1,5 +1,4 @@
 import Popup from "./Popup.js";
-import { closeShowImageButton } from "../components/utils.js";
 
 export default class PopupWithImage extends Popup {
   constructor(popupSelector) {

@@ -10,7 +10,6 @@
       content="Viajes, Estados Unidos, fotografias de paisajes"
     />
     <title>Alrededor de los EE.UU.</title>
-    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
     <div class="page">
@@ -43,6 +42,7 @@
               <img class="element__image" src=" " alt=" " />
               <p class="element__title"></p>
               <button type="button" class="element__button-like"></button>
+              <p class="element__likes"></p>
             </div>
           </template>
         </section>
@@ -70,7 +70,7 @@
               <input
                 type="text"
                 class="form__input"
-                name="aboutme"
+                name="about"
                 id="profile-aboutme"
                 placeholder="Acerca de mi"
                 required
@@ -81,10 +81,9 @@
                 id="profile-aboutme-error"
                 class="form__error-visible"
               ></span>
-              <button
-                type="submit"
-                class="form__button form__button-save"
-              ></button>
+              <button name="profile" type="submit" class="form__button">
+                Guardar
+              </button>
             </fieldset>
           </form>
         </section>
@@ -100,7 +99,7 @@
               <input
                 type="text"
                 class="form__input"
-                name="place"
+                name="name"
                 id="addimage-name"
                 placeholder="Titulo"
                 required
@@ -112,16 +111,40 @@
               <input
                 type="url"
                 class="form__input"
-                name="url"
+                name="link"
                 id="addimage-link"
                 placeholder="Enlace a la imagen"
                 required
               />
               <span id="addimage-link-error" class="form__error-visible"></span>
-              <button
-                type="submit"
-                class="form__button form__button-addimage"
-              ></button>
+              <button name="place" type="submit" class="form__button">
+                Crear
+              </button>
+            </fieldset>
+          </form>
+        </section>
+
+        <section id="popup-change_avatar" class="popup">
+          <button
+            type="button"
+            id="button__change_avatar"
+            class="popup__button-close"
+          ></button>
+          <form id="form-changephoto" class="popup form" novalidate>
+            <h1 class="form__title">Cambiar Foto de Perfil</h1>
+            <fieldset class="form__fieldset">
+              <input
+                type="url"
+                class="form__input"
+                name="avatar"
+                id="change-avatar"
+                placeholder="Enlace a la imagen"
+                required
+              />
+              <span id="change-avatar-error" class="form__error-visible"></span>
+              <button name="avatar" type="submit" class="form__button">
+                Guardar
+              </button>
             </fieldset>
           </form>
         </section>
@@ -135,11 +158,28 @@
           <img class="popup-imagen__review" src=" " alt="" />
           <p class="popup-imagen__subtitle"></p>
         </section>
+
+        <section id="popup-delete" class="popup-delete">
+          <button
+            type="button"
+            id="button__close-delete"
+            class="popup-delete__button-close"
+          ></button>
+
+          <h1 class="popup-delete__title">¿Estás seguro?</h1>
+          <button
+            type="button"
+            id="button__card-delete"
+            class="popup-delete__button"
+          >
+            Si
+          </button>
+        </section>
+
         <footer class="footer">
           <p class="footer__copyright">&#169; 2024 Alrededor de los EEUU</p>
         </footer>
       </main>
     </div>
-    <script src="./pages/index.js" type="module"></script>
   </body>
 </html>
